@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
