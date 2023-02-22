@@ -3,6 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
 const authController = require("./controllers/authController");
+const productController = require("./controllers/productController");
 const app = express();
 
 // connect db
@@ -13,9 +14,11 @@ mongoose.connect(process.env.MONGO_URL, () =>
 
 // routes and middlewares
 // the two middlewares below make req.body accessible to prevent them from returning undefined.
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/auth", authController);
+app.use("/product", productController);
 
 // start server
 app.listen(process.env.PORT, () => console.log("Server started successfully"));

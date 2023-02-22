@@ -3,7 +3,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-// register
+// create account
 authController.post("/register", async (req, res) => {
   try {
     const isExisting = await User.findOne({ email: req.body.email });
@@ -36,7 +36,7 @@ authController.post("/login", async (req, res) => {
     if (!user) {
       throw new Error("User information doesn't match!");
     }
-    // normal passeord and encrypted password
+    // normal password and encrypted password
     const comparePass = await bcrypt.compare(req.body.password, user.password);
     if (!comparePass) {
       throw new Error("User information doesn't match!");
