@@ -1,0 +1,126 @@
+/* navbar */
+.container {
+  height: 60px;
+  width: 100%;
+  background-color: #050404;
+  color: #ffffff;
+  box-shadow: 0px 0.5px 5px 4px #61e8e1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 1;
+}
+
+.title {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.title:hover {
+  color: #fb8b24;
+  font-size: 2rem;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+}
+.listItem {
+  font-size: 1.0625rem;
+  color: #f9e900;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 150ms all;
+}
+
+.listItem:hover {
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+.listItem > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.cartContainer {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cartIcon,
+.userIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cartIcon:hover,
+.userIcon:hover {
+  font-size: 1.7rem;
+}
+
+.cartQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fb8b24;
+  color: whitesmoke;
+  font-weight: 700;
+  border-radius: 25%;
+  bottom: 0.75rem;
+  left: 0.75rem;
+}
+
+.logout {
+  font-size: 1.125rem;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f9e900;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
