@@ -4,6 +4,7 @@ const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
 const authController = require("./controllers/authController");
 const productController = require("./controllers/productController");
+const uploadController = require("./controllers/uploadController");
 const app = express();
 
 // connect db
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/auth", authController);
 app.use("/product", productController);
+app.use("/upload", uploadController);
 
 // start server
 app.listen(process.env.PORT, () => console.log("Server started successfully"));
