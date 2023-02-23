@@ -2,20 +2,19 @@ import React from "react";
 import classes from "./navbar.module.css";
 import { Link } from "react-router-dom";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
-
 const Navbar = () => {
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <Link to="#" className={classes.title}>
+          <Link to="/" className={classes.title}>
             OUTER
           </Link>
         </div>
         <div className={classes.center}>
           <ul className={classes.list}>
             <li className={classes.listItem}>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className={classes.listItem}>
               <a href="#restaurants">Restaurants</a>

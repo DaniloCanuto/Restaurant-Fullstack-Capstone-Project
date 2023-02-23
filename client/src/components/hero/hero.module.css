@@ -1,0 +1,120 @@
+.container {
+  height: calc(100vh - 60px);
+  width: 100%;
+  margin-top: 5.5rem;
+  margin-bottom: -5.5rem;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.title {
+  color: #fb8b24;
+  font-size: 2.875rem;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+.msgOne {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.msgOne > span {
+  color: #fb8b24;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.msgTwo {
+  font-size: 1.625rem;
+  margin-bottom: 24px;
+}
+
+.msgTwo > span {
+  color: #fb8b24;
+  font-weight: 700;
+  font-size: 1.625rem;
+}
+
+.msg {
+  font-size: 1.125rem;
+  max-width: 350px;
+  line-height: 30px;
+}
+
+.msg > span {
+  color: #fb8b24;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttons > button {
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.25rem;
+  color: whitesmoke;
+  background-color: #fb8b24;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons > button:hover {
+  color: whitesmoke;
+  background-color: #f95738;
+  transform: scale(1.05);
+}
+
+.restButtons > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.right {
+  flex: 1;
+}
+/* images */
+.foodDelivery {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-shadow: 0px 0.5px 10px 4px #61e8e1;
+}
+
+.motoDelivery {
+  height: 80px;
+  margin-bottom: 24px;
+}
