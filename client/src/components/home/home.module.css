@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.deliveryInfos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+}
+.deliverySubtitles {
+  text-align: center;
+  font-size: 1.125rem;
+  color: black;
+}
+
+.deliveryTitle {
+  text-align: center;
+  color: #fb8b24;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.deliveryInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.deliveryInfo > h3 {
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.firstImg {
+  width: 400px;
+}
+
+.secondImg {
+  width: 400px;
+}
+
+.thirdImg {
+  width: 400px;
+}

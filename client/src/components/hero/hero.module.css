@@ -11,27 +11,27 @@
   width: 85%;
   margin: 0 auto;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 15rem;
 }
 
 .title {
   color: #fb8b24;
   font-size: 2.875rem;
   font-weight: bold;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   margin-bottom: 30px;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .msgOne {
   margin-bottom: 24px;
-  font-size: 32px;
+  font-size: 1.625rem;
 }
 
 .msgOne > span {
   color: #fb8b24;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.625rem;
 }
 
 .msgTwo {
@@ -48,7 +48,8 @@
 .msg {
   font-size: 1.125rem;
   max-width: 350px;
-  line-height: 30px;
+  margin-top: 50px;
+  line-height: 1.875rem;
 }
 
 .msg > span {
@@ -59,7 +60,7 @@
 
 .buttons {
   display: flex;
-  margin-top: 32px;
+  margin-top: 64px;
   align-items: center;
   gap: 12px;
 }
@@ -74,7 +75,7 @@
   padding: 0.5rem 1.25rem;
   color: whitesmoke;
   background-color: #fb8b24;
-  font-size: 1rem;
+  font-size: 1.125rem;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -106,7 +107,7 @@
 }
 /* images */
 .foodDelivery {
-  height: 85%;
+  height: 40%;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
@@ -115,6 +116,6 @@
 }
 
 .motoDelivery {
-  height: 80px;
-  margin-bottom: 24px;
+  height: 100px;
+  margin-top: 20px;
 }
