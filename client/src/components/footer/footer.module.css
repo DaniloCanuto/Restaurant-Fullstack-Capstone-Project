@@ -1,0 +1,27 @@
+.container {
+  height: 60px;
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-top: 12rem;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconList > li {
+  list-style-type: none;
+  font-size: 2rem;
+  padding: 0 2rem;
+}

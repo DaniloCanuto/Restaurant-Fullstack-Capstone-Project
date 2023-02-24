@@ -5,7 +5,6 @@ import img1 from "../../assets/images/team.jpg";
 import img2 from "../../assets/images/moto-girl.jpg";
 import img3 from "../../assets/images/friendly.jpg";
 import RestaurantCatalog from "../restaurantCatalog/RestaurantCatalog";
-import Newsletter from "../newsletter/Newsletter";
 
 const Home = () => {
   return (
@@ -33,7 +32,6 @@ const Home = () => {
           </div>
         </div>
         <RestaurantCatalog />
-        <Newsletter />
       </div>
     </div>
   );

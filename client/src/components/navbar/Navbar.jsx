@@ -7,9 +7,9 @@ const Navbar = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <Link to="/" className={classes.title}>
+          <a href="/" className={classes.title}>
             OUTER
-          </Link>
+          </a>
         </div>
         <div className={classes.center}>
           <ul className={classes.list}>

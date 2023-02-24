@@ -7,11 +7,20 @@ const RestaurantCatalog = () => {
   return (
     <section id="restaurants" className={classes.container}>
       <div className={classes.wrapper}>
-        <h4 className={classes.subtitle}>Menus</h4>
-        <h2 clasName={classes.title}>Restaurants</h2>
+        <h2 className={classes.subtitle}>Restaurants</h2>
+        <h4 className={classes.title}>Menus</h4>
         <div className={classes.plates}>
           {restaurants.map((restaurant) => (
-            <Link to={`/restaurantCatalog/${restaurants}`}></Link>
+            <Link
+              to={`/restaurantCatalog/${restaurants.name}`}
+              key={restaurant.id}
+              className={classes.plates}
+            >
+              {/* <h4>{restaurant.name}</h4> */}
+              <div className={classes.imgContainer}>
+                <img src={restaurant.img} alt="" />
+              </div>
+            </Link>
           ))}
         </div>
       </div>
