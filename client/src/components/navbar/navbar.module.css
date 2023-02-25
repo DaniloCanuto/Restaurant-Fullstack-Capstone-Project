@@ -35,6 +35,10 @@
   font-size: 2rem;
 }
 
+.title > span {
+  font-size: 0.7rem;
+}
+
 .center {
   flex: 1;
   display: flex;

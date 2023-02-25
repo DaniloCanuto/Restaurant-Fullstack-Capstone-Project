@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4ecdc4;
+  background-color: #fb8b24;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
 .loginWrapper {
   border-radius: 20px;
   background-color: #fff;
-  width: 45vw;
+  width: 60vw;
   height: 60vh;
   display: flex;
   flex-direction: row-reverse;
@@ -24,7 +24,7 @@
 
 .loginLeftSide {
   flex: 1;
-  width: 50%;
+  width: 80%;
   height: 100%;
 }
 
@@ -37,11 +37,11 @@
 
 .loginRightSide {
   margin: 0;
-  flex: 1;
+  flex: 0.2;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  color: #fff;
+  background-color: #fff;
 }
 
 .loginRightSide > h2 {
@@ -59,13 +59,13 @@
 }
 
 .loginForm {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding-left: 275px;
+  padding-left: 5rem;
   gap: 2rem;
+  margin-top: 20px;
 }
 
 .loginForm > input {
@@ -76,7 +76,7 @@
   width: 100%;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-  transition: 150ms all easy;
+  transition: 150ms all easy-in-out;
 }
 
 .loginForm > input:focus {
@@ -87,8 +87,8 @@
   color: whitesmoke;
   background-color: #fb8b24;
   font-weight: bold;
-  font-size: 1.25rem;
-  margin-top: 2.5rem;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
   outline: none;
   border: 1px solid transparent;
   padding: 0.5rem 1.5rem;
@@ -108,13 +108,20 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  margin-top: -15px;
 }
 
 .loginForm > p > a {
   font-size: 1.1rem;
-  color: gray;
+  font-weight: bold;
+  color: #f95738;
   text-decoration: none;
   margin-top: 0.25rem;
+}
+
+.loginForm > p > a:hover {
+  scale: 1.1;
+  color: #fb8b24;
 }
 
 .errorMessage {

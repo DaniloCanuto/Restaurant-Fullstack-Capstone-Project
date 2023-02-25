@@ -28,6 +28,7 @@
   color: #fb8b24;
   font-size: 2.25rem;
   font-weight: bold;
+  margin-top: 70px;
 }
 
 .deliveryInfo {
@@ -36,6 +37,7 @@
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  margin-bottom: -90px;
 }
 
 .deliveryInfo > h3 {

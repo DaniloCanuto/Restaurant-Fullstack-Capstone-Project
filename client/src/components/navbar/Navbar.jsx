@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className={classes.wrapper}>
         <div className={classes.left}>
           <a href="/" className={classes.title}>
-            OUTER
+            OUTER <span>DELIVERY</span>
           </a>
         </div>
         <div className={classes.center}>
