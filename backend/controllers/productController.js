@@ -24,7 +24,7 @@ productController.get("/find/:id", verifyToken, async (req, res) => {
     console.error(error);
   }
 });
-// create restaurant
+// create product
 productController.post("/", verifyTokenAdmin, async (req, res) => {
   try {
     const newProduct = await Product.create({ ...req.body });
