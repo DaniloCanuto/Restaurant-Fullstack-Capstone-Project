@@ -116,7 +116,7 @@
   font-weight: bold;
   color: #f95738;
   text-decoration: none;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .loginForm > p > a:hover {
@@ -132,7 +132,7 @@
   line-height: 1.5rem;
   padding: 0.75rem 1.5rem;
   background-color: #f95738;
-  color: #fff;
+  color: whitesmoke;
   position: absolute;
   top: 5rem;
   right: 5rem;

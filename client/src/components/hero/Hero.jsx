@@ -30,7 +30,7 @@ const Hero = () => {
           <p className={classes.msg}>
             At <span>OUTER</span>, we pride ourselves in making{" "}
             <span>super fast deliveries</span>, while handling your meal with{" "}
-            <span>extrme care</span>.
+            <span>extreme care</span>.
           </p>
           <div className={classes.buttons}>
             <button className={classes.orderButton}>Order Now!</button>

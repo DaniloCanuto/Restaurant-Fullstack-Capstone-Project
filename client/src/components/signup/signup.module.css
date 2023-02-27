@@ -1,0 +1,127 @@
+.signUpContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fb8b24;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+.signUpWrapper {
+  display: flex;
+  width: 45vw;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpLeftSide {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+}
+
+.leftImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+}
+
+.signUpRightSide {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  border-radius: 0 20px 20px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.signUpRightSide > h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-top: 2.5rem;
+}
+
+.signUpRightSide > .signUpForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  column-gap: 32px;
+  overflow: hidden;
+}
+
+.signUpForm > input {
+  outline: none;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  width: 50%;
+  padding-left: 0.25rem;
+  transition: 150ms all ease-in-out;
+}
+
+.signUpForm > input:focus {
+  padding-left: 0.75rem;
+}
+
+.signUpForm > .submitBtn {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  background-color: #fb8b24;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signUpForm > .submitBtn:hover {
+  color: whitesmoke;
+  background-color: #f95738;
+  transform: scale(1.05);
+}
+
+.signUpForm > p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.signUpForm > p > a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f95738;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.signUpForm > p > a:hover {
+  scale: 1.1;
+  color: #fb8b24;
+}
+
+.errorMessage {
+  height: 70px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f95738;
+  color: whitesmoke;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
