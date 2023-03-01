@@ -19,14 +19,13 @@ const Login = () => {
     try {
       const res = await fetch(`http://localhost:5000/auth/login`, {
         headers: {
-          "Content-Type": "application.json",
+          "Content-Type": "application/json",
         },
         method: "POST",
         body: JSON.stringify({ email, password }),
       });
 
       const data = await res.json();
-      console.log(data);
       dispatch(login(data));
       navigate("/");
     } catch (error) {

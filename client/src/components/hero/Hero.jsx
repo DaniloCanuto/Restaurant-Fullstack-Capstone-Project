@@ -35,7 +35,7 @@ const Hero = () => {
           <div className={classes.buttons}>
             <button className={classes.orderButton}>Order Now!</button>
             <button className={classes.restButtons}>
-              <a href="#restaurants">
+              <a href="#foods">
                 Choose a restaurant
                 <AiOutlineArrowDown />
               </a>

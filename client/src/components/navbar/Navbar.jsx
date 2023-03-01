@@ -1,8 +1,19 @@
 import React from "react";
 import classes from "./navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
+import { useDispatch } from "react-redux";
+import { logout } from "../../redux/authSlice";
+
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    dispatch(logout());
+    navigate("/login");
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
@@ -17,7 +28,7 @@ const Navbar = () => {
               <a href="/">Home</a>
             </li>
             <li className={classes.listItem}>
-              <a href="#restaurants">Restaurants</a>
+              <a href="#foods">Restaurants</a>
             </li>
             <li className={classes.listItem}>
               <Link to="/create">Create</Link>
@@ -33,7 +44,9 @@ const Navbar = () => {
             <AiOutlineShoppingCart className={classes.cartIcon} />
             <div className={classes.cartQuantity}>0</div>
           </Link>
-          <button className={classes.logout}>Logout</button>
+          <button onClick={handleLogout} className={classes.logout}>
+            Logout
+          </button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import classes from "./home.module.css";
 import img1 from "../../assets/images/team.jpg";
 import img2 from "../../assets/images/moto-girl.jpg";
 import img3 from "../../assets/images/friendly.jpg";
-import RestaurantCatalog from "../restaurantCatalog/RestaurantCatalog";
+import Foods from "../foods/Foods";
 
 const Home = () => {
   return (
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <RestaurantCatalog />
+        <Foods />
       </div>
     </div>
   );

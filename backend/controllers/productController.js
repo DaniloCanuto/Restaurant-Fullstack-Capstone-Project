@@ -1,5 +1,5 @@
 const productController = require("express").Router();
-const product = require("../models/Product");
+const Product = require("../models/Product");
 const { verifyToken, verifyTokenAdmin } = require("../middlewares/verifyToken");
 
 // get all restaurants

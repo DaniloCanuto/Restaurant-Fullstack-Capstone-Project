@@ -11,8 +11,8 @@ const Create = () => {
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
   const [review, setReview] = useState("");
-  const { token } = useSelector((state) => state.auth);
   const navigate = useNavigate();
+  const { token } = useSelector((state) => state.auth);
 
   const onChangeFile = (e) => {
     setImage(e.target.files[0]);
@@ -42,7 +42,7 @@ const Create = () => {
       }
       const res = await fetch(`http://localhost:5000/product`, {
         headers: {
-          "Content-Type": "application.json",
+          "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
         method: "POST",
@@ -57,7 +57,7 @@ const Create = () => {
       });
 
       const food = await res.json();
-      navigate(`/food/${food.id}`);
+      navigate(`/food/${food._id}`);
     } catch (error) {
       console.error(error.message);
     }
@@ -66,7 +66,7 @@ const Create = () => {
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        <h2 className={classes.title}>Create Plate</h2>
+        <h2 className={classes.title}>Create Dish</h2>
         <form onSubmit={handleCreateProduct} encType="multipart/form-data">
           <div className={classes.inputWrapper}>
             <label>Title: </label>

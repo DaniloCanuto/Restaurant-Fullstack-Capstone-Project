@@ -11,13 +11,13 @@ import mexican1 from "../assets/images/steak-burrito.jpg";
 import mexican2 from "../assets/images/chicken-veggie.jpg";
 import mexican3 from "../assets/images/quesadilla.jpg";
 
-export const restaurants = [
+export const foodTypes = [
   { name: "The Burguer Joint", img: rest1, id: crypto.randomUUID() },
   { name: `Corleone's`, img: rest2, id: crypto.randomUUID() },
   { name: "Los 3 Amigos", img: rest3, id: crypto.randomUUID() },
 ];
 
-export const plates = [
+export const foods = [
   {
     name: "The Original Combo",
     category: "burger",
