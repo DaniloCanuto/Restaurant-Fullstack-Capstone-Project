@@ -8,7 +8,6 @@ import { useEffect } from "react";
 const FoodCatalog = () => {
   const [filteredFoods, setFilteredFoods] = useState([]);
   const location = useLocation();
-  console.log(location.pathname);
   const foodEndpoint = location.pathname.split("/")[2];
   const { token } = useSelector((state) => state.auth);
 
@@ -29,20 +28,15 @@ const FoodCatalog = () => {
   }, [foodEndpoint]);
 
   return (
-    <div className={classes.conatiner}>
+    <div className={classes.container}>
       <div className={classes.wrapper}>
         {filteredFoods?.length !== 0 && (
-          <h2 className={classes.title}>The best {foodEndpoint} menu</h2>
+          <h2 className={classes.title}>The best {foodEndpoint}</h2>
         )}
         <div className={classes.foods}>
           {filteredFoods.length !== 0 ? (
             filteredFoods.map((f) => (
-              <Link
-                //* Uncertain about the path change below (restarurants/plates for plate) and chanded p's for fs
-                to={`/food/${f._id}`}
-                key={f._id}
-                className={classes.food}
-              >
+              <Link to={`/food/${f._id}`} key={f._id} className={classes.food}>
                 <div className={classes.imgContainer}>
                   <img
                     src={`http://localhost:5000/images/${f?.img}`}

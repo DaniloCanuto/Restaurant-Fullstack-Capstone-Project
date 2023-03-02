@@ -1,9 +1,9 @@
 import rest1 from "../assets/images/burguer-joint.png";
 import rest2 from "../assets/images/corleone.png";
 import rest3 from "../assets/images/3amigos.png";
-import burguer1 from "../assets/images/original-combo.jpg";
-import burguer2 from "../assets/images/the-clogger.jpg";
-import burguer3 from "../assets/images/los-3-amigos.jpg";
+import burger1 from "../assets/images/original-combo.jpg";
+import burger2 from "../assets/images/the-clogger.jpg";
+import burger3 from "../assets/images/los-3-amigos.jpg";
 import pizza1 from "../assets/images/mozzarella.jpg";
 import pizza2 from "../assets/images/veggie.jpg";
 import pizza3 from "../assets/images/pepperoni.jpg";
@@ -12,30 +12,30 @@ import mexican2 from "../assets/images/chicken-veggie.jpg";
 import mexican3 from "../assets/images/quesadilla.jpg";
 
 export const foodTypes = [
-  { name: "The Burguer Joint", img: rest1, id: crypto.randomUUID() },
-  { name: `Corleone's`, img: rest2, id: crypto.randomUUID() },
-  { name: "Los 3 Amigos", img: rest3, id: crypto.randomUUID() },
+  { name: "burger", img: rest1, id: crypto.randomUUID() },
+  { name: `pizza`, img: rest2, id: crypto.randomUUID() },
+  { name: "burrito", img: rest3, id: crypto.randomUUID() },
 ];
 
 export const foods = [
   {
     name: "The Original Combo",
     category: "burger",
-    img: burguer1,
+    img: burger1,
     id: crypto.randomUUID(),
     price: Math.floor(Math.random() * 20 + 7),
   },
   {
     name: "The Clogger",
     category: "burger",
-    img: burguer2,
+    img: burger2,
     id: crypto.randomUUID(),
     price: Math.floor(Math.random() * 20 + 10),
   },
   {
     name: "Triple Trouble",
     category: "burger",
-    img: burguer3,
+    img: burger3,
     id: crypto.randomUUID(),
     price: Math.floor(Math.random() * 40 + 7),
   },
