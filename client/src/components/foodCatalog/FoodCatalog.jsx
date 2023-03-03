@@ -53,7 +53,7 @@ const FoodCatalog = () => {
               </Link>
             ))
           ) : (
-            <h1 className={classes.noQuantity}>No {foodEndpoint} right now</h1>
+            <h1 className={classes.noQuantity}></h1>
           )}
         </div>
       </div>

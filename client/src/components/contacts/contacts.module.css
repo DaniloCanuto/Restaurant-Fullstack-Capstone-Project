@@ -17,11 +17,17 @@
 
 .wrapper > h2 {
   color: #fb8b24;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap;
 }
 
+.wrapper > p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
 .wrapper > span {
   color: #f95738;
   font-size: 1.3rem;

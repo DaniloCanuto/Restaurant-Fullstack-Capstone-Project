@@ -16,7 +16,6 @@ const Foods = () => {
               key={foodType.id}
               className={classes.food}
             >
-              {/* <h4>{restaurant.name}</h4> */}
               <div className={classes.imgContainer}>
                 <img src={foodType.img} alt="" />
               </div>
