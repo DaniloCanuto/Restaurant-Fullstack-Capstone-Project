@@ -10,7 +10,8 @@ const Checkout = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <h2>Your order has been placed</h2>
-        <p>Your delivery will arrive between 35 and 50 minutes</p>
+        <h3>Your delivery will arrive between 35 and 50 minutes</h3>
+        <p>The cart and the price will be cleared shortly</p>
         <span>Total Price: {totalPrice}</span>
       </div>
     </div>

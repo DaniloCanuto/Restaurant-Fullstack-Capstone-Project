@@ -23,6 +23,9 @@ export const cartSlice = createSlice({
         (product) => product._id !== action.payload._id
       );
     },
+    emptyCart: (state, action) => {
+      state.products = [];
+    },
   },
 });
 

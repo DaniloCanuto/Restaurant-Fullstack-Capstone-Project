@@ -4,6 +4,7 @@ import classes from "./cart.module.css";
 import { AiOutlineClose } from "react-icons/ai";
 import { removeProduct } from "../../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
+import { emptyCart } from "../../redux/cartSlice";
 
 const Cart = () => {
   const { products } = useSelector((state) => state.cart);
@@ -16,10 +17,15 @@ const Cart = () => {
     dispatch(removeProduct({ _id: id }));
   };
 
+  const clearCart = () => {
+    dispatch(emptyCart());
+  };
+
   const handleOrder = () => {
     if (products.length > 0) {
       navigate("/checkout");
     }
+    setTimeout(clearCart, 8000);
   };
 
   return (
@@ -55,7 +61,10 @@ const Cart = () => {
               </div>
             ))
           ) : (
-            <h1 className={classes.noProducts}>Cart is empty.</h1>
+            <h1 className={classes.noProducts}>
+              Your cart is empty. Please select your dishes or if you already
+              checked out, make a new order.{" "}
+            </h1>
           )}
         </div>
         <div className={classes.right}>
