@@ -53,9 +53,10 @@
   gap: 25px;
 }
 .listItem {
-  font-size: 1.0625rem;
+  font-size: 0.9rem;
   color: #f9e900;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   transition: 150ms all;
@@ -63,7 +64,7 @@
 
 .listItem:hover {
   color: whitesmoke;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .listItem > a {

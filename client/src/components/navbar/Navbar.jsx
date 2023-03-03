@@ -32,7 +32,7 @@ const Navbar = () => {
               <a href="/#foods">Restaurants</a>
             </li>
             <li className={classes.listItem}>
-              <Link to="/create">Create</Link>
+              <Link to="/create">Dishes</Link>
             </li>
             <li className={classes.listItem}>
               <a href="/contacts">Contacts</a>
