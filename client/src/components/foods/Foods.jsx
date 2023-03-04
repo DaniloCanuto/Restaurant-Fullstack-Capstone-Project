@@ -7,7 +7,7 @@ const Foods = () => {
   return (
     <section id="foods" className={classes.container}>
       <div className={classes.wrapper}>
-        <h2 className={classes.subtitle}>Rest</h2>
+        <h2 className={classes.subtitle}>Restaurant</h2>
         <h4 className={classes.title}>Menus</h4>
         <div className={classes.foods}>
           {foodTypes.map((foodType) => (

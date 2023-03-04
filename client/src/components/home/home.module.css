@@ -35,9 +35,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
   align-items: center;
-  margin-bottom: -120px;
+  margin-bottom: -80px;
 }
 
 .deliveryInfo > h3 {
