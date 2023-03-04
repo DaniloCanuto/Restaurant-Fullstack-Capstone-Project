@@ -25,7 +25,7 @@ const FoodCatalog = () => {
       setFilteredFoods(data);
     };
     fetchFoodType();
-  }, [foodEndpoint]);
+  }, [foodEndpoint, token]);
 
   return (
     <div className={classes.container}>
@@ -53,7 +53,7 @@ const FoodCatalog = () => {
               </Link>
             ))
           ) : (
-            <h1 className={classes.noQuantity}></h1>
+            <span className={classes.noQuantity}></span>
           )}
         </div>
       </div>

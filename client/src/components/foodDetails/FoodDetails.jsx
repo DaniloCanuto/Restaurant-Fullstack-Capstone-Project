@@ -27,7 +27,7 @@ const FoodDetails = () => {
       setFoodDetails(data);
     };
     fetchFoodDetails();
-  }, [id]);
+  }, [id, token]);
 
   const changeQuantity = (command) => {
     if (command === "dec") {

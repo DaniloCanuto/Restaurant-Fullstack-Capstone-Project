@@ -23,9 +23,5 @@ app.use("/auth", authController);
 app.use("/product", productController);
 app.use("/upload", uploadController);
 
-app.get("/", (req, res) => {
-  res.send("Welcome to Outer Delivery");
-});
-
 // start server
 app.listen(process.env.PORT, () => console.log("Server started successfully"));
