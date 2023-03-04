@@ -23,7 +23,9 @@ app.use("/auth", authController);
 app.use("/product", productController);
 app.use("/upload", uploadController);
 
-app.get("/");
+app.get("/", (req, res) => {
+  res.send(`https://danilo-canuto-frontend-restaurant-app.netlify.app`);
+});
 
 // start server
 app.listen(process.env.PORT, () => console.log("Server started successfully"));
