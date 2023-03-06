@@ -3,6 +3,7 @@ import classes from "./create.module.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
 const Create = () => {
   const [title, setTitle] = useState("");
@@ -32,7 +33,7 @@ const Create = () => {
         formData.append("filename", filename);
         formData.append("image", image);
 
-        await fetch(`http://localhost:5000/upload/image`, {
+        await fetch(`${urlBackend}/upload/image`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -40,7 +41,7 @@ const Create = () => {
           body: formData,
         });
       }
-      const res = await fetch(`http://localhost:5000/product`, {
+      const res = await fetch(`${urlBackend}/product`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,

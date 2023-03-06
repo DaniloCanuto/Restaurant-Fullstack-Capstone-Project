@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { removeProduct } from "../../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
 import { emptyCart } from "../../redux/cartSlice";
+const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
 const Cart = () => {
   const { products } = useSelector((state) => state.cart);
@@ -42,7 +43,7 @@ const Cart = () => {
                   <AiOutlineClose />
                 </div>
                 <img
-                  src={`http://localhost:5000/images/${product.img}`}
+                  src={`${urlBackend}/images/${product.img}`}
                   className={classes.img}
                   alt=""
                 />

@@ -12,11 +12,12 @@ const Signup = () => {
   const [error, setError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:5000/auth/register`, {
+      const res = await fetch(`${urlBackend}auth/register`, {
         headers: {
           "Content-Type": "application/json",
         },

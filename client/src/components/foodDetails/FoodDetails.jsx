@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { addProduct } from "../../redux/cartSlice";
+const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
 const FoodDetails = () => {
   const [foodDetails, setFoodDetails] = useState();
@@ -18,7 +19,7 @@ const FoodDetails = () => {
 
   useEffect(() => {
     const fetchFoodDetails = async () => {
-      const res = await fetch(`http://localhost:5000/product/find/${id}`, {
+      const res = await fetch(`${urlBackend}/product/find/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,10 +47,7 @@ const FoodDetails = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <img
-            src={`http://localhost:5000/images/${foodDetails?.img}`}
-            alt=""
-          />
+          <img src={`${urlBackend}/images/${foodDetails?.img}`} alt="" />
         </div>
         <div className={classes.right}>
           <h2 className={classes.title}>{foodDetails?.title}</h2>

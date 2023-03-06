@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import classes from "./foodCatalog.module.css";
 import { useEffect } from "react";
+const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
 const FoodCatalog = () => {
   const [filteredFoods, setFilteredFoods] = useState([]);
@@ -14,7 +15,7 @@ const FoodCatalog = () => {
   useEffect(() => {
     const fetchFoodType = async () => {
       const res = await fetch(
-        `http://localhost:5000/product?category=${foodEndpoint}`,
+        `${urlBackend}/product?category=${foodEndpoint}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -39,7 +40,7 @@ const FoodCatalog = () => {
               <Link to={`/food/${f._id}`} key={f._id} className={classes.food}>
                 <div className={classes.imgContainer}>
                   <img
-                    src={`http://localhost:5000/images/${f?.img}`}
+                    src={`${urlBackend}/images/${f?.img}`}
                     className={classes.foodImg}
                     alt=""
                   />

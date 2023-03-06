@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import img from "../../assets/images/delivery.jpg";
 import { login } from "../../redux/authSlice";
+const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +18,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:5000/auth/login`, {
+      const res = await fetch(`${urlBackend}/auth/login`, {
         headers: {
           "Content-Type": "application/json",
         },
