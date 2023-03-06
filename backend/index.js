@@ -24,7 +24,7 @@ app.use("/product", productController);
 app.use("/upload", uploadController);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to our API service");
+  res.send("Welcome to Outer Delivery API service");
 });
 
 // start server
