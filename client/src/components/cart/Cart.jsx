@@ -43,7 +43,7 @@ const Cart = () => {
                   <AiOutlineClose />
                 </div>
                 <img
-                  src={`${urlBackend}/images/${product.img}`}
+                  src={`${urlBackend}images/${product.img}`}
                   className={classes.img}
                   alt=""
                 />

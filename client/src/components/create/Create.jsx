@@ -33,7 +33,7 @@ const Create = () => {
         formData.append("filename", filename);
         formData.append("image", image);
 
-        await fetch(`${urlBackend}/upload/image`, {
+        await fetch(`${urlBackend}upload/image`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -41,7 +41,7 @@ const Create = () => {
           body: formData,
         });
       }
-      const res = await fetch(`${urlBackend}/product`, {
+      const res = await fetch(`${urlBackend}product`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
