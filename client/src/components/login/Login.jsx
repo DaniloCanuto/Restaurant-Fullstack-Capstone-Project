@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${urlBackend}/auth/login`, {
+      const res = await fetch(`${urlBackend}auth/login`, {
         headers: {
           "Content-Type": "application/json",
         },
