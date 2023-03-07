@@ -14,14 +14,11 @@ const FoodCatalog = () => {
 
   useEffect(() => {
     const fetchFoodType = async () => {
-      const res = await fetch(
-        `${urlBackend}/product?category=${foodEndpoint}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      const res = await fetch(`${urlBackend}product?category=${foodEndpoint}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       const data = await res.json();
       setFilteredFoods(data);
     };
