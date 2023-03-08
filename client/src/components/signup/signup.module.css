@@ -42,16 +42,23 @@
   overflow: hidden;
 }
 
+.signUpRightSide > h1 {
+  color: #f95738;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 2.7rem;
+}
+
 .signUpRightSide > h2 {
   text-align: center;
-  font-size: 2.25rem;
-  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .signUpRightSide > .signUpForm {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
   gap: 2rem;

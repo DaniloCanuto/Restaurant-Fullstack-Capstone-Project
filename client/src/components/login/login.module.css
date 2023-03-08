@@ -28,6 +28,18 @@
   height: 100%;
 }
 
+.mainTitle {
+  font-size: 1.7rem;
+  color: #f95738;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fb8b24;
+  margin: 0.1rem 0;
+}
+
 .leftImg {
   width: 100%;
   height: 100%;
@@ -42,13 +54,6 @@
   width: 100%;
   overflow: hidden;
   background-color: #fff;
-}
-
-.loginRightSide > h2 {
-  text-align: center;
-  font-size: 2.25rem;
-  color: #fb8b24;
-  margin: 2.5rem 0;
 }
 
 .loginRightSide > .loginForm {

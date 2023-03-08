@@ -4,7 +4,7 @@ import classes from "./cart.module.css";
 import { AiOutlineClose } from "react-icons/ai";
 import { removeProduct } from "../../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
-import { emptyCart } from "../../redux/cartSlice";
+// import { emptyCart } from "../../redux/cartSlice";
 const urlBackend = "https://danilo-canuto-restaurant-app.herokuapp.com/";
 
 const Cart = () => {
@@ -18,15 +18,15 @@ const Cart = () => {
     dispatch(removeProduct({ _id: id }));
   };
 
-  const clearCart = () => {
-    dispatch(emptyCart());
-  };
+  // const clearCart = () => {
+  //   dispatch(emptyCart());
+  // };
 
   const handleOrder = () => {
     if (products.length > 0) {
       navigate("/checkout");
     }
-    setTimeout(clearCart, 8000);
+    // setTimeout(clearCart, 8000);
   };
 
   return (
