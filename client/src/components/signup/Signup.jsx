@@ -42,6 +42,7 @@ const Signup = () => {
           <img src={img} className={classes.leftImg} alt="" />
         </div>
         <div className={classes.signUpRightSide}>
+          <h1 className={classes.mainTitle}>OUTER DELIVERY</h1>
           <h2 className={classes.title}>Create Account</h2>
           <form onSubmit={handleSignup} className={classes.signUpForm}>
             <input

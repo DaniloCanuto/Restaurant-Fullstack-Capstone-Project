@@ -46,6 +46,7 @@ const Login = () => {
 
         <div className={classes.loginRightSide}></div>
         <form onSubmit={handleLogin} className={classes.loginForm}>
+          <h1 className={classes.mainTitle}>OUTER DELIVERY</h1>
           <h2 className={classes.title}>Login</h2>
           <input
             type="email"
