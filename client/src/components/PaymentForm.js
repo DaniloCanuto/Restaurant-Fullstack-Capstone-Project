@@ -57,7 +57,7 @@ export default function PaymentForm() {
         </form>
       ) : (
         <div>
-          <h2>Your order has been placed and paid andsuccessfully!</h2>
+          <h2>Your order has been placed and paid successfully!</h2>
           <h3>Your delivery will arrive between 35 and 50 minutes</h3>
           <p>The cart and the price have been cleared</p>
         </div>
